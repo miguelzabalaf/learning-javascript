@@ -8,9 +8,22 @@
 
 var city = 'Barranquilla';
 var country = 'Colombia';
+
+// CONCATENACIÓN EN JAVASCRIPT
 var cityCountry = city + ', ' + country
+
 var student = 'Miguel Zabala';
 var age = 20;
 var state = true;
-var hobbies = ['Béisbol', 'Estudiar', 'Programar', 'crear', 'crear']
+var hobbies = ['Béisbol', 'Estudiar', 'Programar', 'crear', 'crear'];
 
+// REASIGNANDO VALORES EN JS
+student = 'Miguel Zabala Figueroa';
+age = 21;
+
+// RESULTADO
+console.log(student + ', edad: ' + age + ', ' + 'localidad: ' + cityCountry + ', ' + 'Hobbies: ' + hobbies);
+
+document.write(student + ', edad: ' + age + ', ' + 'localidad: ' + cityCountry + ', ' + 'Hobbies: ' + hobbies);
+
+alert('Hola ' + student);
