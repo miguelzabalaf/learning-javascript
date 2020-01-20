@@ -14,7 +14,7 @@ if (true) {
 }
 
 console.log(number); // RESULTADO 50
-
+// VAR POSEE ALCANCE GLOBAL
 // #########################################################################
 
 // PRUEBA CON LET
@@ -27,4 +27,5 @@ if (true) {
 }
 
 console.log(text) //Miguel está estudiando Javascript
+// LET POSEE ALCANCE LIMITADO
 // #########################################################################
