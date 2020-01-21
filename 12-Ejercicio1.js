@@ -13,14 +13,14 @@ if (inicio == true) {
     var attemps = 1;
 
         do {
-            var number1 = prompt(name + ", ingresa el primer número: \n Intento#" + (attemps));
+            var number1 = parseInt(prompt(name + ", ingresa el primer número: \n Intento#" + (attemps)));
             attemps++;
     
-        } while (parseInt(number1) / parseInt(number1) != 1 )
+        } while (isNaN(number1) || number1 < 0);
         do {
-            var number2 = prompt(name + ", ingresa el segundo número: \n Intento#" + (attemps));
+            var number2 = parseInt(prompt(name + ", ingresa el segundo número: \n Intento#" + (attemps)));
             attemps++;
-        } while (parseInt(number2) / parseInt(number2) != 1 )
+        } while (isNaN(number2) || number2 < 0);
 
         if (number1 == number2) {
             console.log(name + ", los números ingresados son iguales.");
