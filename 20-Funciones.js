@@ -26,3 +26,43 @@ function division(num1, num2) {
         return console.log("El resultado de la división entre " + num1 + " y " + num2 + " es: " + (num1 / num2) + "\nLa división NO es exacta.");
     }
 }
+
+
+function tabla(num, min, max) {
+    for (var i = min; i <= max; i++) {
+        console.log(num + " x " + i + " = " + (num * i));
+    }
+}
+
+function typeNumber(num) {
+    if (num % 2 == 0) {
+        console.log("El número " + num + " es par.");
+    } else {
+        console.log("El número " + num + " es impar.");
+    }
+}
+
+function betweenOf(number1, number2) {
+    if (number1 < number2) {
+        var min = number1;
+        var max = number2;
+        for(var i = (min + 1); i <= (max - 1); i++) {
+            if (i % 2 != 0) {
+                console.log(i + " Es impar");
+            } else {
+                console.log(i + " Es par");
+            }
+        }
+    } else if (number2 < number1) {
+        var min = number2;
+        var max = number1;
+        for(var i = (min + 1); i <= (max - 1); i++) {
+            if (i % 2 != 0) {
+                console.log(i + " Es impar");
+            } else {
+                console.log(i + " Es par");
+            }
+        }    
+    } 
+    
+}
