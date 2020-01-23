@@ -25,3 +25,5 @@ while(repeat == true) {
     repeat = confirm("¿Quieres intentar otro número?")
 }
 
+alert("Gracias por probar, código creado por Miguel Zabala.");
+
