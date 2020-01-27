@@ -3,7 +3,7 @@
 // FUNCIONES
 // UNA FUNCION ES UNA AGRUPACIÓN REUTILIZABLE DE UN CONJUNTO DE INSTRUCCIONES QUE PODEMOS REUTILIZAR TODAS LAS VECES QUE QUERAMOS.
 
-function suma (num1, num2) {
+function suma (num1 = 1, num2 = 1) { //HE ESTABLECIDO UN VALOR POR DEFECTO
     return console.log("El resultado de la suma entre " + num1 + " y " + num2 + " es: " + (num1 + num2));
 }
 
