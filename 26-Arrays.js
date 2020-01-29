@@ -29,8 +29,26 @@ document.write("<ul>")
 for (var i = 0; i < lenguajes.length; i++) {
     document.write("<li>"+ lenguajes[i] +"</li>")    
 }
-document.write("*****************")
+document.write("*****************");
 lenguajes.forEach( (elemento, indice)=> {
     document.write("<li>" + indice + " - " + elemento + "</li>")
 });
+document.write("*****************");
+for (let lenguaje in lenguajes) {
+    document.write("<li>" + lenguajes[lenguaje] + "</li>")
+}
 document.write("</ul>")
+
+document.write("******BUSQUEDAS******* </br>");
+
+var busqueda = lenguajes.find(lenguaje => {
+    return lenguaje == "PHP";
+});
+
+var busqueda2 = lenguajes.find(lenguaje => lenguaje == "PHP");
+
+document.write(busqueda, "<br>",  busqueda2);
+
+var precios = [10, 20, 30, 50];
+
+var comprobar = precios.some(precio => precio < 30); // DEVUELVE TRUE PORQUE HAY PRECIOS MENORES A 30 (20, 10)
